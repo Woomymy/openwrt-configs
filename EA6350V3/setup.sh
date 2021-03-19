@@ -37,3 +37,7 @@ do
 		cp "${FILE}" "${WRT_DIR}"
 	fi
 done
+cd "${WRT_DIR}"
+"${WRT_DIR}/scripts/feeds" update -a
+"${WRT_DIR}/scripts/feeds" install -a
+echo "Done!"
