@@ -29,4 +29,11 @@ do
 		cp "${PATCH}" "${WRT_DIR}/target/linux/ipq40xx/patches-5.4/"
 	fi
 done
-
+FILES=(configs/feeds.conf.default)
+for FILE in "${FILES[*]}"
+do
+	if [[ -f "${FILE}" ]]
+	then
+		cp "${FILE}" "${WRT_DIR}"
+	fi
+done
