@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-PACKAGES="luci-lib-ipkg luci-compat relayd luci-proto-relay luci-app-unbound luci-app-wol luci-app-advanced-reboot libustream-openssl"
+PACKAGES="ca-bundle luci-lib-ipkg luci-compat relayd luci-proto-relay luci-app-unbound luci-app-wol luci-app-advanced-reboot libustream-openssl"
 install_packages() {
 	echo -e "\e[96mInstalling packages...\e[m"
 	opkg update
