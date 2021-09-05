@@ -22,12 +22,6 @@ install_themes() {
 		opkg install temp.ipk
 	done
 }
-install_wpathree() {
-	echo -e "\e[96mSetting up WPA3\e[m"
-	opkg update
-	opkg --force-depends --force-maintainer --force-overwrite install wpad-openssl
-}
 
 install_packages
 install_themes
-install_wpathree
